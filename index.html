@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FusionRack - Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>FusionRack</h1>
+      <nav id="navLinks">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <a href="#">Categories <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-content">
+            <a href="electronics.html">Electronics</a>
+            <a href="books.html">Books</a>
+            <a href="clothings.html">Clothings</a>
+          </div>
+        </div>
+        <a href="cart.html">Cart <span id="cart-item-count">(0)</span></a>
+        <a href="login.html">Login</a>
+      </nav>
+      <div class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <div class="image-marquee">
+      <marquee behavior="scroll" direction="left" scrollamount="10">
+        <img src="banner1.webp" alt="Promo 1" class="marquee-img" />
+        <img src="books.webp" alt="Promo 2" class="marquee-img" />
+        <img src="clothes.jpg" alt="Promo 3" class="marquee-img" />
+      </marquee>
+    </div>
+
+    <section class="products">
+      <div class="card">
+        <img src="ecospeaker.webp" alt="Echo Speaker" />
+        <h3>Echo Speaker</h3>
+        <p>₹<span class="product-price">4999</span></p>
+        <button
+          class="add-to-cart-btn"
+          data-id="echo-speaker"
+          data-name="Echo Speaker"
+          data-price="4999"
+          data-image="ecospeaker.webp"
+        >
+          Add to Cart
+        </button>
+      </div>
+      <div class="card">
+        <img src="gaming mouse.jpg" alt="Gaming Mouse" />
+        <h3>Gaming Mouse</h3>
+        <p>₹<span class="product-price">2999</span></p>
+        <button
+          class="add-to-cart-btn"
+          data-id="gaming-mouse"
+          data-name="Gaming Mouse"
+          data-price="2999"
+          data-image="gaming mouse.jpg"
+        >
+          Add to Cart
+        </button>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=600"
+          alt="Travel Book"
+        />
+        <h3>Travel Book</h3>
+        <p>₹<span class="product-price">1499</span></p>
+        <button
+          class="add-to-cart-btn"
+          data-id="travel-book"
+          data-name="Travel Book"
+          data-price="1499"
+          data-image="https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=600"
+        >
+          Add to Cart
+        </button>
+      </div>
+      <div class="card">
+        <img src="fashion hoodie.jpg" alt="Fashion Hoodie" />
+        <h3>Fashion Hoodie</h3>
+        <p>₹<span class="product-price">3999</span></p>
+        <button
+          class="add-to-cart-btn"
+          data-id="fashion-hoodie"
+          data-name="Fashion Hoodie"
+          data-price="3999"
+          data-image="fashion hoodie.jpg"
+        >
+          Add to Cart
+        </button>
+      </div>
+    </section>
+    <section class="image-gallery">
+      <h2>Explore Our Products</h2>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="D:\E-commerce2\rackserver.jpg" alt="Rack Servers" />
+          <h3>Rack Servers</h3>
+          <p>High-performance computing units designed for data centers.</p>
+        </div>
+        <div class="gallery-item">
+          <img src="D:\E-commerce2\newtork.jpg" alt="Networking Gear" />
+          <h3>Networking Gear</h3>
+          <p>
+            Robust switches, routers, and firewalls for seamless connectivity.
+          </p>
+        </div>
+        <div class="gallery-item">
+          <img src="D:\E-commerce2\storage.webp" alt="Storage Solutions" />
+          <h3>Storage Solutions</h3>
+          <p>Scalable and secure storage systems for all your data needs.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>&copy; 2025 FusionRack. All rights reserved.</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

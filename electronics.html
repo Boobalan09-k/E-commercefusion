@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Electronics - FusionRack</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>FusionRack</h1>
+      <nav id="navLinks">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <a href="#">Categories <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-content">
+            <a href="electronics.html">Electronics</a>
+            <a href="books.html">Books</a>
+            <a href="clothings.html">Clothings</a>
+          </div>
+        </div>
+        <a href="cart.html">Cart <span id="cart-item-count">(0)</span></a>
+        <a href="login.html">Login</a>
+      </nav>
+      <div class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h2>Electronics</h2>
+    </section>
+
+    <section class="products">
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600"
+          alt="Laptop"
+        />
+        <h3>Powerful Laptop</h3>
+        <p>₹<span class="product-price">79999</span></p>
+        <button
+          class="add-to-cart-btn"
+          data-id="powerful-laptop"
+          data-name="Powerful Laptop"
+          data-price="79999"
+          data-image="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600"
+        >
+          Add to Cart
+        </button>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600"
+          alt="Smartphone"
+        />
+        <h3>Latest Smartphone</h3>
+        <p>₹<span class="product-price">49999</span></p>
+        <button
+          class="add-to-cart-btn"
+          data-id="latest-smartphone"
+          data-name="Latest Smartphone"
+          data-price="49999"
+          data-image="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600"
+        >
+          Add to Cart
+        </button>
+      </div>
+      <div class="card">
+        <img src="headphones2.jpg" alt="Headphones" />
+        <h3>Premium Headphones</h3>
+        <p>₹<span class="product-price">1299</span></p>
+        <button
+          class="add-to-cart-btn"
+          data-id="premium-headphones"
+          data-name="Premium Headphones"
+          data-price="1299"
+          data-image="headphones2.jpg"
+        >
+          Add to Cart
+        </button>
+      </div>
+      <div class="card">
+        <img src="smartwatches.jpg" alt="Smartwatch" />
+        <h3>Advanced Smartwatch</h3>
+        <p>₹<span class="product-price">1499</span></p>
+        <button
+          class="add-to-cart-btn"
+          data-id="advanced-smartwatch"
+          data-name="Advanced Smartwatch"
+          data-price="1499"
+          data-image="smartwatches.jpg"
+        >
+          Add to Cart
+        </button>
+      </div>
+    </section>
+
+    <footer>&copy; 2025 FusionRack. All rights reserved.</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
